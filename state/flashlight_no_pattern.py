@@ -1,14 +1,7 @@
 """
-imagen we have an flashlight that has three state:
-    -on
-    -low light mode
-    -off
+We can use state design pattern to avoid using conditional statements
+when changing an object's behavior based on its state.
 
-we create a simple ui that contain a one button
-and with press the button, the state of flashlight must be changed:
-    - from off to on
-    - from on to low light mode
-    - from low light mode to off
 """
 import sys
 
@@ -17,6 +10,7 @@ import sys
 
 from PyQt5.QtGui import QFont
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton
+
 
 class FlashLightWindow(QWidget):
     status = "off"
